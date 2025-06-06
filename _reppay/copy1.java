@@ -6,12 +6,11 @@ import java.util.*;
 
 class Main {
     public static void main(String args[]) throws IOException {
-        Scanner sc = new Scanner(System.in);
-
-        int n = sc.nextInt();
-
-        solve(n);
-        sc.close();
+        try (Scanner sc = new Scanner(System.in)) {
+            int n = sc.nextInt();
+            
+            solve(n);
+        }
 
     }
 
