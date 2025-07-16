@@ -1,11 +1,12 @@
-import java.io.*;
+// import java.io.*;
 import java.util.*;
-import java.util.*;
+// import java.util.*;
 
 class Solution{
-
+        
+    
     public static int aggressiveCows(int a[],int cows){
-       //Write your code here
+       
 
        return -1;
     }
@@ -14,6 +15,7 @@ class Solution{
 }
 
 public class Cows {
+        @SuppressWarnings({ "resource", "static-access" })
         public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
