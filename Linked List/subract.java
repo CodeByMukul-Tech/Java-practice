@@ -47,38 +47,23 @@ class subract {
 }
 
 class Solution {
-    static Node subtract(Node l1, Node l2) {
-        Node l1s = reversenodes(l1);
-        Node l2s = reversenodes(l2);
-        int borrow = 0;
 
-        while (l1s != null || l2s != null || borrow != 0) {
-            int val1 = l1s.data;
-            int val2 = (l2 != null) ? l2.data : 0;
-
-            if (val1 < val2) {
-                val1 = val1 + 10;
-                borrow = 1;
-                if()
-            }
-            
-            int sum = val1 - val2 - borrow;
-
-
-
+    public static int count(Node head) {
+        int count = 0;
+        Node curr = head;
+        while (curr != null) {
+            count++;
+            curr = curr.next;
 
         }
-
+        return count;
     }
 
-    static Node reversenodes(Node head) {
+    public static Node Reversed(Node head) {
         Node prev = null;
         Node curr = head;
-        Node next = null;
-
         while (curr != null) {
-
-            next = curr.next;
+            Node next = curr.next;
             curr.next = prev;
             prev = curr;
             curr = next;
@@ -86,5 +71,48 @@ class Solution {
         }
 
         return prev;
+    }
+
+    public static int compare(Node l1 , Node l2){
+        int ll1 = count(l1);
+        int ll2 = count(l2);
+        if(ll1>ll2) return 1;
+        if(ll2>ll1) return -1;
+        
+    }
+
+    static Node subtract(Node l1, Node l2) {
+        if (l1 == null || l1.next == null)
+            return l2;
+        if (l2 == null || l2.next == null)
+            return l1;
+
+
+        int count_l1 = count(l1);
+        int count_l2 = count(l2);
+
+        Node frsit = Reversed(l1);
+        Node second = Reversed(l2);
+        int num1 = 0 ;
+        int num2 = 0 ;
+        Node ans = new Node(-1);
+        int bowrow = 0;
+
+        if(count_l1 > count_l2){
+
+            // logic for if l1 is lenght is greater than two;
+           
+
+        }
+        else{
+
+            // logic for if l2 is length is greater than one ;
+        }
+
+        Reversed(ans.next);
+
+
+        return ans;
+
     }
 }
