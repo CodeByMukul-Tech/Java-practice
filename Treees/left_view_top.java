@@ -48,8 +48,7 @@ class Solution
 {
     public static void letfView(Node root)
     {
-        if(root == null) return ;
-        Queue
+      
     }
     
 }

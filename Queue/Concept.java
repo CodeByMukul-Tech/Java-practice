@@ -10,7 +10,7 @@ public class Concept{
 
 
 
-        dq.
+        
         a.offer(10);
         a.offer(20);
         a.offer(40);

@@ -4,6 +4,10 @@ class Node {
 
     int data;
     Node link;
+    public Node(int x ){
+        this.data = x;
+
+    }
 }
 
 class StackUsing_LL {
@@ -44,26 +48,37 @@ class StackUsing_LL {
 class StackUsingLinkedlist {
 
 	Node top;
-    int d
+    int d ;
 	StackUsingLinkedlist() { this.top = null; }
 
 	public void push(int x)
 	{
-		//Complete the function
+        if(top==null){
+            Node n = new Node(x);
+            top = n;
+        }
+		else{
+            Node n = new Node(x);
+            n.link = top;
+            top = n;
+        }
 	}
 
 	public int peek()
+
 	{
-		//Complete the function
+        if(top== null) return -1;
+		return top.data;
 	}
 
 	public void pop()
-	{
-		//Complete the function
+
+	{ if(top==null)return ;
+		 top=top.link;
 	}
 
 	public Node display()
 	{
-		//Complete the function
-	}
+       return top;
+    }
 }
