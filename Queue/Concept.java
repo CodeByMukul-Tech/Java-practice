@@ -22,5 +22,6 @@ public class Concept{
         System.out.println(a.poll());
 
         System.out.println(a.isEmpty());
+        System.out.println( (12.00000-5.00000-6.00000+50.00000)/4);
     }
 }
