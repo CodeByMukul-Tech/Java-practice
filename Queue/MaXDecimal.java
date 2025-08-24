@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.Vector;
+// import java.util.Vector;
 
 class Solution {
     public static void findMaxAverage(int n, int[] nums, int k) {

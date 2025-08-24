@@ -7,8 +7,7 @@ class circular_tour
 			int n = sc.nextInt();
 			int p[] = new int[n];
 			int d[] = new int[n];
-			int j=0;
-			int k=0;
+			
 
         for(int i = 0; i < n; i++) {
             p[i] = sc.nextInt();
