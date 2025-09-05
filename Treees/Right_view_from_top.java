@@ -72,24 +72,23 @@ class right_view_from_top {
 
 class Solution{
     ArrayList<Integer> rightView(Node root) {
-        Queue<Node> q = new ArrayDeque<>();
-        ArrayList<Integer> ans = new ArrayList<>();
-        q.add(root);
-        while (!q.isEmpty()) {
-            int n = q.size();
-            ArrayList <Integer> currLevel = new ArrayList<>();
-            for(int i = 0 ;i< n ;i++){
-                Node curr = q.poll();
-                currLevel.add(curr.data);
-                if(curr.left!= null) q.add(curr.left);
-                if(curr.right!= null) q.add(curr.right);
-            }
-            ans.add(currLevel.get(currLevel.size()-1));
-            
-        }
-        return ans;
+      ArrayList<Integer> ans = new ArrayList<>();
+      Queue<Node> q= new ArrayDeque<>();
+      Node rightnode = null;
+      q.add(root);
+      while (!q.isEmpty()) {
+        int n = q.size();
+        for(int i = 0 ; i< n ;i++){
+            Node curr = q.poll();
+            rightnode = curr;
+            if(curr.left!=null) q.add(curr.left);
+            if(curr.right!=null) q.add(curr.right);
 
-	
+        }
+        ans.add(rightnode.data);
+        
+      }
+	return ans;
 	
     }
 }

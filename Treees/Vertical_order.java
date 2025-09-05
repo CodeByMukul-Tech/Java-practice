@@ -78,7 +78,7 @@ class Pair {
 
 class Solution {
     public void bottomView(Node root) {
-        ArrayList<Integer> ans = new ArrayList<>();
+        // ArrayList<Integer> ans = new ArrayList<>();
         Queue<Pair> q = new LinkedList<>();
         Map<Integer, ArrayList<Integer>> map = new TreeMap<>();
         q.add(new Pair(0, root));
