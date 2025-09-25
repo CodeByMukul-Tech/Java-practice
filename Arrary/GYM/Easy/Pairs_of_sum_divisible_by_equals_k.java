@@ -1,4 +1,6 @@
-import java.io.*;
+package GYM.Easy;
+
+// import java.io.*;
 import java.util.*;
 
 class Solution {
@@ -27,5 +29,6 @@ public class Pairs_of_sum_divisible_by_equals_k {
         }
         Solution Obj = new Solution();
         System.out.println(Obj.Pairs(arr,k)); 
+        sc.close();
     }
 }

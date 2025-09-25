@@ -1,6 +1,6 @@
 package GYM.Easy;
 
-import java.io.*;
+// import java.io.*;
 import java.util.*;
 
 class Accio{
@@ -33,5 +33,6 @@ public class abc {
         System.out.print(arr.get(0));
         System.out.print(' ');
         System.out.print(arr.get(1));
+        input.close();
     }
 }

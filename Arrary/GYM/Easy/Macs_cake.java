@@ -1,3 +1,5 @@
+package GYM.Easy;
+
 import java.util.*;
 
 class Accio{
@@ -28,5 +30,6 @@ public class Macs_cake {
         Accio obj = new Accio();
         long ans=obj.MarcsCakewalk(n,arr);
         System.out.println(ans);
+        sc.close();
     }
 }

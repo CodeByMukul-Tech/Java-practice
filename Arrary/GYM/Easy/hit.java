@@ -1,3 +1,5 @@
+package GYM.Easy;
+
 import java.util.*;
 
 public class hit {
@@ -16,5 +18,6 @@ public class hit {
         for(int i=0;i<n;++i){
             System.out.print(ans[i] + " ");
         }
+        sc.close();
     }
 }

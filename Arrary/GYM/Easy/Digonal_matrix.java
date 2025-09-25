@@ -1,5 +1,7 @@
+package GYM.Easy;
+
 import java.util.*;
-import java.io.*;
+// import java.io.*;
 
 public class Digonal_matrix {
 
@@ -35,7 +37,7 @@ public class Digonal_matrix {
         }
 
         digonals(s, n);
-
+        iron.close();
 
        
     }

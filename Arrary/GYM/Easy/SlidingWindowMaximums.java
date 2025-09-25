@@ -1,3 +1,5 @@
+package GYM.Easy;
+
 import java.util.*;
 
 class Solution{
@@ -21,6 +23,7 @@ public class SlidingWindowMaximums {
         for(int i=0;i<ans.length;++i){
             System.out.print(ans[i] + " ");
         }
+        sc.close();
     }
 }
  
