@@ -12,6 +12,7 @@ public class problem6 {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
+        sc.close();
 
         // Find and print shortest distance
         System.out.println(findShortestEvenDistance(arr));

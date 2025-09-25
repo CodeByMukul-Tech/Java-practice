@@ -3,7 +3,7 @@ package GYM.Easy;
 import java.util.*;
 
 class Accio{
-    static long MarcsCakewalk(int n,int[] cupcakes){
+     long MarcsCakewalk(int n,int[] cupcakes){
         long sum =0 ;
         long s = 0 ;
       Arrays.sort(cupcakes);

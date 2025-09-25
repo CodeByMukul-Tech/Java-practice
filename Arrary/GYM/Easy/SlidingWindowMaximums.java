@@ -4,7 +4,19 @@ import java.util.*;
 
 class Solution{
     static int[] SlidingWindowMaximum(int N, int K, int[] arr){
-       int[] ans
+    
+        int[] ans=new int[N-K+1];
+        int index=0;
+        for(int i=0;i<=N-K;i++){
+            int max=arr[i];
+            for(int j=i;j<i+K;j++){
+                if(arr[j]>max){
+                    max=arr[j];
+                }
+            }
+            ans[index++]=max;
+        }
+        return ans;
     } 
 }
 
@@ -18,8 +30,8 @@ public class SlidingWindowMaximums {
         {
             nums[i] = sc.nextInt();
         }
-        Solution obj = new Solution();
-        int[] ans=obj.SlidingWindowMaximum(n,k,nums);
+        // Solution obj = new Solution();
+        int[] ans=Solution.SlidingWindowMaximum(n,k,nums);
         for(int i=0;i<ans.length;++i){
             System.out.print(ans[i] + " ");
         }

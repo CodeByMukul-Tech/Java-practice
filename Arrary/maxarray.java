@@ -1,4 +1,5 @@
-import java.io.*;
+
+// import java.io.*;
 import java.util.Scanner;
 
 public class maxarray {
@@ -11,6 +12,7 @@ public class maxarray {
         }
         int result = maxElement(nums);
         System.out.print(result);
+        sc.close();
     }
 
     public static int maxElement(int[] arr) {
