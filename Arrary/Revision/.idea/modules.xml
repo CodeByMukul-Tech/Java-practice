@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Previous_Revision/Previous_Revision.iml" filepath="$PROJECT_DIR$/Previous_Revision/Previous_Revision.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Revision.iml" filepath="$PROJECT_DIR$/.idea/Revision.iml" />
+      <module fileurl="file://$PROJECT_DIR$/problem/problem.iml" filepath="$PROJECT_DIR$/problem/problem.iml" />
     </modules>
   </component>
 </project>
