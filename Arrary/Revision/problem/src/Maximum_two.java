@@ -1,4 +1,4 @@
-import java.io.*;
+// import java.io.*;
 import java.util.*;
 
 public class Maximum_two {
@@ -10,6 +10,7 @@ public class Maximum_two {
             arr[i] = sc.nextInt();
         }
         ArrayProblem(arr);
+        sc.close();
     }
 
     public static void ArrayProblem(int[] arr) {

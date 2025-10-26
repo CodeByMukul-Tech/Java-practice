@@ -6,8 +6,8 @@ class Solution {
         int idx = 0 , mx = Integer.MIN_VALUE;
         // int nums = arr[0];
         for(int i = 0 ; i<n;i++){
-            if(arr[i]>mx){
-                mx=arr[i];
+            if(nums[i]>mx){
+                mx=nums[i];
                 idx=i;
             }
         }
@@ -33,5 +33,6 @@ public class Largest_element {
 
         Solution Obj = new Solution();
         System.out.println(Obj.LargestElement(nums, n));
+        sc.close();
     }
 }

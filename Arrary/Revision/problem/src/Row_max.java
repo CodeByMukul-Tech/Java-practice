@@ -19,7 +19,7 @@ public class Row_max {
 }
 
 class Solution {
-    static int rowWithMaximumOnes(int arr[][], int n, int m) {
+   public  int rowWithMaximumOnes(int arr[][], int n, int m) {
         int maxCount = 0;
         int rowIndex = -1;
 
