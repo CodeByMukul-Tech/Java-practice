@@ -1,3 +1,6 @@
+import Encapsulated.Restuartent;
+import Inheritance.Facebook;
+
 public class Main {
     public static void main(String[] args) throws java.lang.Exception {
         // Jungle dog = new Jungle();
@@ -9,12 +12,12 @@ public class Main {
         // dog.getter_age();
         // dog.getter_type();
 
-        BMW m8 = new BMW();
-        m8.seePrice();
-        m8.see_details();
-        jaguar fytpe = new jaguar();
-        fytpe.seePrice();
-        fytpe.see_details();
+        // BMW m8 = new BMW();
+        // m8.seePrice();
+        // m8.see_details();
+        // jaguar fytpe = new jaguar();
+        // fytpe.seePrice();
+        // fytpe.see_details();
 
         // Person p1 = new Person();
         // p1.setName("thor");
@@ -33,6 +36,26 @@ public class Main {
         // p2.getAge();
         // p2.getName();
         // p2.getPlanet();
+
+
+
+//        Raju s = new Raju();
+//        s.hello();
+
+
+//        Facebook suraj = new Facebook("RAju ",2004 , "Delhi");
+//
+//        suraj.show_details();
+
+        Restuartent BCA_chaiwala = new Restuartent("BCA");
+        BCA_chaiwala.setOrder_name("kutta");
+        BCA_chaiwala.setOrder_review("Cake is so good by dogesh badmash");
+        BCA_chaiwala.base();
+        BCA_chaiwala.butter();
+        BCA_chaiwala.cream();
+        BCA_chaiwala.design();
+        System.out.println(BCA_chaiwala.getOrder_name());
+        System.out.println(BCA_chaiwala.getOrder_review());
 
     }
 }
