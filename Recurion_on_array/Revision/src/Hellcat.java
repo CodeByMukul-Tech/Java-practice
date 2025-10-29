@@ -4,9 +4,9 @@ public class Hellcat {
     static String PairStar(String str) {
         char prev_char = str.charAt(0);
         
-        int idx = 0;
+        
 
-       return strgiver(str,prev_char,idx);
+       return strgiver(str,prev_char,0);
         
     }
 
