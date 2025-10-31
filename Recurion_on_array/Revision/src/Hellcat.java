@@ -23,5 +23,6 @@ public class Hellcat {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         System.out.println(PairStar(s));
+        sc.close();;
     }
 }
