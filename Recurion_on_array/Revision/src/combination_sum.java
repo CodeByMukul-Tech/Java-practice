@@ -13,9 +13,11 @@ class Solution {
     private void backtrack(int[] nums, int target, int start, List<Integer> current, List<List<Integer>> result) {
         if (target == 0) {
             result.add(new ArrayList<>(current));
+            return;
         }
 
         if(start >= nums.length || target <0){
+
             return;
         }
         current.add(nums[start]);
