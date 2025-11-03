@@ -4,6 +4,7 @@ import java.util.*;
 class Solution {
     static int[][] solve(int n, int[] nums) {
         Arrays.sort(nums);
+        List<Integer> sender = new ArrayList<>(Arrays.stream(nums).boxed().collect(Collectors.toList()));
         ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
         ArrayList<Integer> curr = new ArrayList<>();
         helper(nums, n, 0, curr, ans);

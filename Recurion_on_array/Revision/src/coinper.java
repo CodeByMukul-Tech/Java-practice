@@ -2,8 +2,32 @@
 import java.util.*;
 
 class Solution {
-    public  void coinChange2(int[] coins, int amt){
-        helper();
+    public void coinChange2(int[] coins, int amt) {
+        Arrays.sort(coins);
+        // ArrayList<ArrayList<Integer>> ans = new ArrayList<>();
+        ArrayList<Integer> curr = new ArrayList<>();
+        helper(coins, amt, curr);
+
+    }
+
+    private void helper(int[] coins, int target, ArrayList<Integer> curr) {
+        if (target == 0) {
+            for(int i = 0 ; i< curr.size();i++){
+                System.out.print(curr.get(i));
+            }
+            System.out.println();
+            return;
+
+        }
+        if (target < 0) {
+              return;
+        }
+        for (int coinss : coins) {
+            curr.add(coinss);
+            helper(coins, target - coinss, curr);
+            curr.remove(curr.size() - 1);
+        }
+
     }
 }
 
